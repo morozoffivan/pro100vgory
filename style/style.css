@@ -18,7 +18,7 @@ body{
 }
 
 .hidden{
-    display: none;
+    display: none !important;
 }
 
 .montserrat-bold {
@@ -39,28 +39,32 @@ body{
     justify-content: end;
 }
 
+.flex-column{
+    flex-direction: column;
+}
+
 /* header */
 
 #header{
     background: url('../assets/img/bg/header.png');
     background-size: cover;
-    height: 40vh;
+    height: 50vh;
 }
 
 h1{
     color: #fff;
 }
 
-h2 {
+.subtitle {
     color: black;
     text-shadow: -1px -1px 6px white;
+    padding: 2% 0;
   }
 
 .nav-main{
     list-style: none;
     display: flex;
     gap: 3%;
-    justify-content: space-between;
     align-items: center;
     color: #fff;
 }
