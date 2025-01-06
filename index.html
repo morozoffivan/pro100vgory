@@ -16,7 +16,7 @@
     <section id="header">
 
         <nav class="hidden">
-            <ul class="flex flex-column nav-main">
+            <ul class="flex flex-column nav-main fixed">
                 <li>Главная</li>
                 <li>Наши экскурсии</li>
                 <li>О нас</li>
@@ -25,7 +25,7 @@
                 <li>Важная информация</li>
                 <li>Контакты</li>
                 <li>Обратная связь</li>
-                <li class="btn-close hidden"><i class="fa-solid fa-circle-xmark"></i></li>
+                <li class="btn-close hidden"><i class="fa-solid fa-circle-xmark close-i"></i></li>
             </ul>
         </nav>
 
@@ -42,8 +42,23 @@
     </section>
     
     <section id="excursions">
-        <div class="container-left montserrat-bold">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quibusdam fugiat dolorum ipsam est architecto provident pariatur. Neque ipsa atque cumque suscipit, mollitia reiciendis aliquid ea iure, aut similique blanditiis.
+        <div class="container-left">
+            <div class="carousel-container">
+                <button class="carousel-control prev" id="prev-btn">&#10094;</button>
+                <div class="carousel-wrapper">
+                  <div class="card-container">
+                    <div class="card">1</div>
+                    <div class="card">2</div>
+                    <div class="card">3</div>
+                    <div class="card">4</div>
+                    <div class="card">5</div>
+                    <div class="card">6</div>
+                    <div class="card">7</div>
+                  </div>
+                </div>
+                <button class="carousel-control next" id="next-btn">&#10095;</button>
+              </div>
+              
         </div>
     </section>
 
