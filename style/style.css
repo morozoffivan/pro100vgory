@@ -40,6 +40,10 @@ body{
     justify-content: end;
 }
 
+.flex-center{
+  justify-content: center;
+}
+
 .flex-column{
     flex-direction: column;
 }
@@ -55,6 +59,7 @@ body{
     background: url('../assets/img/bg/header.png');
     background-size: cover;
     height: 50vh;
+    margin-bottom: 5%;
 }
 
 h1{
@@ -110,9 +115,24 @@ h1{
     .subtitle{
         font-size: 2.5rem;
     }
+
+    .about-desc>h3{
+      font-size: 36px;
+      color: black;
+    }
+  
+    .about-desc>p{
+      font-size: 24px;
+      color: black;
+    }
 }
 
-/* excurs */
+/* excursions */
+
+#excursions{
+  margin-bottom: 5%;
+}
+
 /* Общий стиль контейнера */
 .carousel-container {
     position: relative;
@@ -170,6 +190,9 @@ h1{
     background-size: contain; /* Масштабирует изображение, чтобы оно полностью вместилось */
     background-repeat: no-repeat; /* Убирает повторение */
     background-position: center; /* Центрирует изображение в контейнере */
+    color: #fff;
+    text-shadow: 0px 0px 3px black;
+    gap:3%;
   }
 
   .card-1{
@@ -213,5 +236,48 @@ h1{
     background-size: cover; /* Заполнение контейнера */
     background-position: center; /* Центрирование изображения */
     background-repeat: no-repeat; /* Отключает повторение */
+  }
+
+  .excursions-subtitle{
+    color: #0499DD;
+  }
+
+  .callback{
+    border-radius: 1.8vh;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    color: #fff;
+    padding: 3%;
+    border: none;
+  }
+
+  /* about */
+
+  #about{
+    margin-bottom: 5%;
+  }
+
+  .about-cover{
+    width: 80vw;
+    height: 100vh;
+    background: url('../assets/img/bg/about.png');
+    background-size: cover; /* Заполнение контейнера */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Отключает повторение */
+  }
+
+  .about-desc{
+    background-color: #EDEDED;
+    position: absolute;
+    left: 30%;
+    padding: 3%;
+    border-radius: 1.8vh;
+  }
+
+  .about-desc>h3{
+    color: black;
+  }
+
+  .about-desc>p{
+    color: black;
   }
   
