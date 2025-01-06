@@ -166,5 +166,52 @@ h1{
     font-size: 20px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 40vh;
+    background-size: contain; /* Масштабирует изображение, чтобы оно полностью вместилось */
+    background-repeat: no-repeat; /* Убирает повторение */
+    background-position: center; /* Центрирует изображение в контейнере */
+  }
+
+  .card-1{
+    background: url('../assets/img/cards/card1.webp');
+    background-size: cover; /* Заполнение контейнера */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Отключает повторение */
+  }
+  .card-2{
+    background: url('../assets/img/cards/card2.webp');
+    background-size: cover; /* Заполнение контейнера */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Отключает повторение */
+  }
+  .card-3{
+    background: url('../assets/img/cards/card3.webp');
+    background-size: cover; /* Заполнение контейнера */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Отключает повторение */
+  }
+  .card-4{
+    background: url('../assets/img/cards/card4.webp');
+    background-size: cover; /* Заполнение контейнера */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Отключает повторение */
+  }
+  .card-5{
+    background: url('../assets/img/cards/card5.webp');
+    background-size: cover; /* Заполнение контейнера */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Отключает повторение */
+  }
+  .card-6{
+    background: url('../assets/img/cards/card6.webp');
+    background-size: cover; /* Заполнение контейнера */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Отключает повторение */
+  }
+  .card-7{
+    background: url('../assets/img/cards/card7.webp');
+    background-size: cover; /* Заполнение контейнера */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Отключает повторение */
   }
   
