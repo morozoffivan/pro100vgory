@@ -48,6 +48,10 @@ body{
     flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .fixed{
     position: fixed;
     z-index: 9999;
@@ -283,16 +287,53 @@ h1{
 
   /* kind of excurs */
 
-  .yellow-circel{
-    text-align: center;
-    width: 10vw;
-    height: 20vh;
+  #kind-of-excurs{
+    margin-bottom: 5%;
+  }
+
+  .yellow-circle {
     display: inline-block;
-    border-radius: 4vh;
-    background-color: yellow;
+    width: 10vw; /* Адаптивная ширина относительно ширины окна */
+    height: 10vw; /* Адаптивная высота для сохранения пропорций */
+    border-radius: 50%; /* Делает элемент кругом */
+    background-color: yellow; /* Цвет фона */
+    text-align: center; /* Центрирование содержимого */
+    line-height: 10vw; /* Выравнивание содержимого по вертикали */
+    font-size: 5vw; /* Адаптивный размер шрифта */
+    margin: 10px; /* Отступы между элементами */
+  }
+
+  @media (max-width: 600px) {
+    .yellow-circle {
+        width: 20vw;
+        height: 20vw;
+        font-size: 8vw;
+        line-height: 20vw;
+    }
   }
 
   .yellow-circel>i{
     font-size: 4rem;
+  }
+
+  .flex-kind {
+    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+    gap: 20px; /* Отступы между блоками */
+  }
+  
+  .flex-kind-item {
+    flex: 1 1 100%; /* По умолчанию элементы занимают всю ширину строки */
+    max-width: 100%; /* Предотвращает превышение ширины */
+  }
+  
+  @media (min-width: 768px) { /* На ПК и планшетах (ширина >= 768px) */
+    .flex-kind-item {
+      flex: 1 1 calc(50% - 20px); /* Два блока в строке, с учётом отступов */
+      max-width: calc(50% - 20px); /* Уточнение ширины */
+    }
+  }
+  
+  .flex-center>.callback{
+    margin-top: 5%;
   }
   
