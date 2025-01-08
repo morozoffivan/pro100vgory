@@ -72,4 +72,24 @@ document.addEventListener('DOMContentLoaded', ()=>{
     // Инициализация стартовой позиции
     updateCarouselPosition();
 
+    //modal
+
+    const btnsModal = document.querySelectorAll('.callback'),
+          modal = document.querySelector('.modal'),
+          btnClose = document.querySelector('.modal__close');
+
+    function hideModal(){
+        btnsModal.forEach(item=>{
+            item.addEventListener('click', ()=>{
+                modal.classList.toggle('hidden')
+            })
+        })
+    };
+
+    hideModal();
+
+    btnClose.addEventListener('click', ()=>{
+        modal.classList.toggle('hidden');
+    });
+
 })

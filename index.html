@@ -14,20 +14,29 @@
     
     <body>
         <section id="header">
-    
             <nav class="hidden">
                 <ul class="flex flex-column nav-main fixed">
-                    <li>Главная</li>
-                    <li>Наши экскурсии</li>
-                    <li>О нас</li>
-                    <li>Виды экскурсий</li>
-                    <li>Галерея</li>
-                    <li>Важная информация</li>
-                    <li>Контакты</li>
-                    <li>Обратная связь</li>
+                    <li><a href="#header"></a>Главная</li>
+                    <li><a href="#excursions"></a>Наши экскурсии</li>
+                    <li><a href="#about"></a>О нас</li>
+                    <li><a href="#kind-of-excurs"></a>Виды экскурсий</li>
+                    <li><a href="#gallery"></a>Галерея</li>
+                    <li><a href="#info"></a>Важная информация</li>
+                    <li><a href="#contacts"></a>Контакты</li>
+                    <li class="callback callback-nav">Обратная связь</li>
                     <li class="btn-close hidden"><i class="fa-solid fa-circle-xmark close-i"></i></li>
                 </ul>
             </nav>
+
+            <div class="header-contacts">
+                <a target="_blank" href="https://vk.com/pro100vgory"><i class="fa-brands fa-vk"></i></a>
+                <a target="_blank" href="https://t.me/pro100vgoru"><i class="fa-brands fa-telegram"></i></a>
+                <a target="_blank" href="https://wa.me/79620256047"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <div class="header-contacts-num">
+                <a class="href_contacts" href="tel:+79620256047"><i class="fa-solid fa-phone"></i>+7 962 025-60-47 </a> 
+            </div>
     
             <div class="flex flex-end container-right">
                 <i class="fa-solid fa-bars nav-btn"></i>
@@ -39,6 +48,7 @@
                 <h2 class="montserrat-bold subtitle">Выбирайте свой день и своё путешествие...</h2>
                 <button class="callback">Записаться</button>
             </div>
+            
             
         </section>
         
@@ -165,6 +175,7 @@
     
         <section id="info">
             <div class="container-left">
+                <h2 class="excursions-subtitle">Важная информация</h2>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quibusdam fugiat dolorum ipsam est architecto provident pariatur. Neque ipsa atque cumque suscipit, mollitia reiciendis aliquid ea iure, aut similique blanditiis.
             </div>
         </section>
@@ -185,8 +196,18 @@
               </div>
         </section>
     
-    <section id="footer">
+    <section id="contacts">
+        <div class="contacts-container">
+            <img src="./assets/img/logo/logo.png" alt="логотип" class="logo-main">
+            <div class="flex-contacts">
 
+                <a target="_blank" href="https://vk.com/pro100vgory"><i class="fa-brands fa-vk"></i></a>
+                <a target="_blank" href="https://t.me/pro100vgoru"><i class="fa-brands fa-telegram"></i></a>
+                <a target="_blank" href="https://wa.me/79620256047"><i class="fa-brands fa-whatsapp"></i></a>
+     
+            </div>
+
+            </div>
     </section>
     <script src="./script/script.js"></script>
     <script src="https://kit.fontawesome.com/8b41cb6c67.js" crossorigin="anonymous"></script>
